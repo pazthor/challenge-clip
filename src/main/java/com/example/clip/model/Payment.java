@@ -1,20 +1,14 @@
 package com.example.clip.model;
 
 import java.math.BigDecimal;
-import java.util.Date;
-import javax.persistence.Basic;
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import javax.validation.constraints.NotBlank;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -33,10 +27,14 @@ public class Payment {
     private long id;
 
     @Column(name = "amount")
+    @NotBlank(message = "amount must be not empty")
     private BigDecimal amount;
 
     @Column(name = "user_id")
+    @NotBlank(message = "amount must be not empty")
     private String userId;
 
+    @Column(name = "status")
+    private Status status;
 
 }
