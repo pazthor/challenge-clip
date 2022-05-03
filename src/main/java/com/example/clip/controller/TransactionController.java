@@ -5,16 +5,14 @@ import javax.persistence.PersistenceException;
 
 import com.example.clip.model.Payment;
 import com.example.clip.model.PaymentDisbursement;
+import com.example.clip.model.UserReport;
 import com.example.clip.request.PaymentRequest;
 import com.example.clip.services.TransactionService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -69,5 +67,17 @@ public class TransactionController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ex.getMessage());
         }
     }
-    //TODO: reportPerUser:
+
+    @RequestMapping(value = "/getReport", method = RequestMethod.GET)
+    public ResponseEntity getReportByUser( @RequestParam String userId) {
+
+        try {
+            UserReport report = transactionService.getReportByUser(userId);
+            log.info("User Report Created Successfully");
+            return ResponseEntity.ok(report);
+
+        } catch (PersistenceException ex) {
+            return ResponseEntity.status(HttpStatus.OK).body(ex.getMessage());
+        }
+    }
 }
