@@ -1,5 +1,10 @@
 # Clip Challenge
 
+# Table of Contents
+1. [Prerequisites](#Prerequisites)
+2. [Challenge](#Challenge)
+4. [run test on postman](#run-test-on-postman)
+
 ## Prerequisites
 - Spring Boot
 - JPA
@@ -7,7 +12,7 @@
 - Maven 4
 - Java 11
 
-## Description
+## Challenge
 This applications consist of the following:
 
 - Controller package:  where the basic endpoint is.
@@ -36,9 +41,13 @@ The challenge consists of completing as many of the following steps as possible:
 4. Add security for the disbursement process endpoint.
 
 
-##Notes:
+## Notes
 - The expected minimum is that you complete steps 1,2,3. 4 is optional  (Completing all is an extra).
 - We want see your skills and abilities to code so if at any moment you want to change or refactor anything go ahead.
 - We are considering as reviewers that your code challenge is code-prod-quality and it will review under this impression.
 - Please initialize the directory with the challenge as a git repo so you can commit new features and we check on your thought process.
 - Please upload the code-challenge to a git-repository and share the access with the reviewers thavt recruitment team indicates. 
+
+
+## run test on postman
+import the collections, the file is inside in the folder `postman`, run the project and run the collection to insert the transactions 

@@ -1,0 +1,569 @@
+{
+	"info": {
+		"_postman_id": "0c7d98a1-6664-4537-9088-80fcdcf77b3a",
+		"name": "Integration test-  Clip Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Step 0 - create transaction",
+			"item": [
+				{
+					"name": "localhost:8080/api/clip/createPayload",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\":100,\n    \"userId\":\"User 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clip/createPayload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"createPayload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/clip/createPayload Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\":100,\n    \"userId\":\"User 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clip/createPayload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"createPayload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/clip/createPayload Copy 4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\":100,\n    \"userId\":\"User 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clip/createPayload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"createPayload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/clip/createPayload Copy 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\":100,\n    \"userId\":\"User 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clip/createPayload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"createPayload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/clip/createPayload Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\":100,\n    \"userId\":\"User 2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clip/createPayload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"createPayload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/clip/createPayload Copy 10",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\":100,\n    \"userId\":\"User 2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clip/createPayload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"createPayload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/clip/createPayload Copy 9",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\":1000,\n    \"userId\":\"User 2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clip/createPayload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"createPayload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/clip/createPayload Copy 7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\":1000,\n    \"userId\":\"User 2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clip/createPayload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"createPayload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/clip/createPayload Copy 8",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\":300,\n    \"userId\":\"User 3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clip/createPayload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"createPayload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/clip/createPayload Copy 13",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\":600,\n    \"userId\":\"User 3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clip/createPayload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"createPayload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/clip/createPayload Copy 12",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\":400,\n    \"userId\":\"User 3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clip/createPayload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"createPayload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/clip/createPayload Copy 11",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\":555,\n    \"userId\":\"User 3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clip/createPayload",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"createPayload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "First endpoint - get users with payments",
+			"item": [
+				{
+					"name": "localhost:8080/api/clip/getUsersPaymentSaved",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"It shouldn't user duplicated\",() => {",
+									"    const responseJson = pm.response.json();",
+									"    const result = checkIfDuplicateExists(responseJson);",
+									"    pm.expect(result).to.be.false;",
+									"    ",
+									"   ",
+									"});",
+									"",
+									" function checkIfDuplicateExists(arr) {",
+									"        return new Set(arr).size !== arr.length",
+									"    ",
+									"};"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/clip/getUsersPaymentSaved",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"getUsersPaymentSaved"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Second enpoint - Disbursement process",
+			"item": [
+				{
+					"name": "localhost:8080/api/clip/disbursementProcess",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"should be status ok\", ()=>{",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/clip/disbursementProcess",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"disbursementProcess"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Third endpoint - User report",
+			"item": [
+				{
+					"name": "localhost:8080/api/clip/getReport?userId=use4",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"should be status ok\", ()=>{",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/clip/getReport?userId=User 1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"getReport"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "User 1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/clip/getReport?userId=use4 Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"should be status ok\", ()=>{",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/clip/getReport?userId=User 2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"getReport"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "User 2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/clip/getReport?userId=use4 Copy 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"should be status ok\", ()=>{",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/clip/getReport?userId=User 3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clip",
+								"getReport"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "User 3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
