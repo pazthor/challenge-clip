@@ -4,6 +4,7 @@ package com.example.clip.controller;
 import javax.persistence.PersistenceException;
 
 import com.example.clip.model.Payment;
+import com.example.clip.model.PaymentDisbursement;
 import com.example.clip.request.PaymentRequest;
 import com.example.clip.services.TransactionService;
 import lombok.extern.slf4j.Slf4j;
@@ -56,6 +57,17 @@ public class TransactionController {
         }
     }
 
-    //TODO: disbursementProcess
+    @RequestMapping(value = "/disbursementProcess", method = RequestMethod.GET)
+    public ResponseEntity disbursementProcess() {
+
+        try {
+            List<PaymentDisbursement> userWithPayments = transactionService.getListUsersWithDisbursementProcess();
+            log.info("Users with Disbursement process Successfully");
+            return ResponseEntity.ok(userWithPayments);
+
+        } catch (PersistenceException ex) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ex.getMessage());
+        }
+    }
     //TODO: reportPerUser:
 }
