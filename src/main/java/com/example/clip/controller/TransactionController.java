@@ -38,7 +38,7 @@ public class TransactionController {
             return ResponseEntity.status(HttpStatus.OK).build();
 
         } catch (PersistenceException ex) {
-            return ResponseEntity.status(HttpStatus.OK).body(ex.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ex.getMessage());
         }
     }
 
@@ -77,7 +77,7 @@ public class TransactionController {
             return ResponseEntity.ok(report);
 
         } catch (PersistenceException ex) {
-            return ResponseEntity.status(HttpStatus.OK).body(ex.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ex.getMessage());
         }
     }
 }
