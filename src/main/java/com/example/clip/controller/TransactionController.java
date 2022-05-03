@@ -46,7 +46,7 @@ public class TransactionController {
     public ResponseEntity getUsers() {
 
         try {
-            List<Payment> userWithPayments = transactionService.getListUsersWithPaymentSaved();
+            List<String> userWithPayments = transactionService.getListUsersWithPaymentSaved();
             log.info("Users with Payments loaded Successfully");
             return ResponseEntity.ok(userWithPayments);
 

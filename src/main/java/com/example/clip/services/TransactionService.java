@@ -1,9 +1,6 @@
 package com.example.clip.services;
 
-import com.example.clip.model.Payment;
-import com.example.clip.model.PaymentDisbursement;
-import com.example.clip.model.Status;
-import com.example.clip.model.UserReport;
+import com.example.clip.model.*;
 import com.example.clip.repository.PaymentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,14 +19,23 @@ public class TransactionService {
         this.paymentRepository = paymentRepository;
     }
 
-    public List<Payment> getListUsersWithPaymentSaved() {
+    public List<String> getListUsersWithPaymentSaved() {
+        List<Payment> paymentList = paymentRepository.findAll();
 
-        return paymentRepository.findByStatusIs(Status.NEW);
+        List<String> result = paymentList
+                .stream()
+                .map(Payment::getUserId).distinct()
+                .collect(Collectors.toList());
+
+        return  result;
     }
 
     public List<PaymentDisbursement> getListUsersWithDisbursementProcess() {
         List<Payment> payments =  paymentRepository.findByStatusIs(Status.NEW);
-        List<Payment> paymentsUpdated = payments.stream().peek(p -> p.setStatus(Status.PROCESSED)).collect(Collectors.toList());
+        List<Payment> paymentsUpdated = payments
+                .stream()
+                .peek(p -> p.setStatus(Status.PROCESSED))
+                .collect(Collectors.toList());
         paymentRepository.saveAll(paymentsUpdated);
 
         List<PaymentDisbursement> result = disbursementProcess(payments);
