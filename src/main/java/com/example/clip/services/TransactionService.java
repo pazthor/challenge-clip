@@ -20,7 +20,7 @@ public class TransactionService {
     }
 
     public List<String> getListUsersWithPaymentSaved() {
-        List<Payment> paymentList = paymentRepository.findAll();
+        List<Payment> paymentList = paymentRepository.findByStatusIs(Status.NEW);
 
         List<String> result = paymentList
                 .stream()
